@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartel Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cartel Tic Tac Toe</h1>
+        <p id="message">The Reds start the game!</p>
+        <div class="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div id="stats">
+            <p>🔥 Reds Wins: <span id="redWins">0</span></p>
+            <p>💎 Blues Wins: <span id="blueWins">0</span></p>
+        </div>
+        <button onclick="restartGame()">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

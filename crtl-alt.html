@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartel Tic Tac Toe</title>
+  <!-- Using a modern Google Font -->
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Cartel Tic Tac Toe</h1>
+      <div class="controls">
+        <button id="toggleMode">Toggle Mode (Current: PvP)</button>
+        <button id="restart">Restart Game</button>
+      </div>
+    </header>
+    <div class="game-wrapper">
+      <aside class="scoreboard">
+        <h2>Scoreboard</h2>
+        <ul>
+          <li>🔥 Red Wins: <span id="redWins">0</span></li>
+          <li>💎 Blue Wins: <span id="blueWins">0</span></li>
+          <li>🤖 AI Wins: <span id="aiWins">0</span></li>
+          <li>👤 Player Wins: <span id="playerWins">0</span></li>
+        </ul>
+        <!-- AI difficulty selection -->
+        <div class="ai-difficulty">
+          <label for="aiDifficulty">AI Difficulty:</label>
+          <select id="aiDifficulty">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </aside>
+      <section class="board-container">
+        <div class="board">
+          <!-- 9 grid cells -->
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+        </div>
+        <p id="message">Choose a mode to start the game!</p>
+      </section>
+    </div>
+    <footer>
+      <p>Developed with ❤️ by crtl-alt</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

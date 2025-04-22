@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartel Tic Tac Toe</title>
+    <!-- Google Font for a modern aesthetic -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1>Cartel Tic Tac Toe</h1>
+        <!-- Turn status placed at top for immediate visibility -->
+        <div id="turnStatus">Please choose a mode to start...</div>
+        <div class="controls">
+          <!-- Our new organic mode-switcher button -->
+          <button id="toggleMode" class="toggle-btn">Switch to AI Mode</button>
+          <button id="restart" class="restart-btn">Restart Game</button>
+          <!-- Separate AI controls (only visible in AI mode) -->
+          <div id="aiControls" class="ai-controls">
+            <label for="aiDifficulty">AI Difficulty:</label>
+            <select id="aiDifficulty">
+              <option value="easy">Easy</option>
+              <option value="medium" selected>Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+        </div>
+      </header>
+
+      <div class="game-wrapper">
+        <aside class="scoreboard">
+          <h2>Scoreboard</h2>
+          <ul>
+            <li>🔥 Red Wins: <span id="redWins">0</span></li>
+            <li>💎 Blue Wins: <span id="blueWins">0</span></li>
+            <li>🤖 AI Wins: <span id="aiWins">0</span></li>
+            <li>👤 Player Wins: <span id="playerWins">0</span></li>
+          </ul>
+        </aside>
+        <section class="board-container">
+          <div class="board">
+            <!-- 9 grid cells -->
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <p>Developed with ❤️ by YourName</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
